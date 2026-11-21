@@ -27,7 +27,6 @@ Verification is reported as verified, mismatch, or unavailable. The verifier acc
 1. `app.py` validates input and renders the Streamlit interface.
 2. `solver.py` sends the prompt and problem to `OLLAMA_BASE_URL/api/generate` using `OLLAMA_MODEL`; it handles connection errors, timeouts, missing models, invalid JSON, and malformed model answers. If Ollama's CUDA runner fails during initialization, it retries once with `num_gpu=0` on the local CPU.
 3. `prompts.py` contains the reusable Qwen2.5-Math tutor instructions and requires `Final answer:` on the last non-empty line.
-3. `prompts.py` contains the reusable Qwen2.5-Math tutor instructions and requires `Final answer:` on the last non-empty line.
 4. If Qwen omits a safe calculation that matches its final answer, the solver asks the same local model once for a constrained numeric expression. It accepts only arithmetic characters before passing that expression to SymPy.
 5. `math_verifier.py` accepts only a short arithmetic expression made from digits, decimal points, parentheses, and operators. It evaluates with SymPy and compares the result with the numeric final answer.
 
@@ -114,9 +113,9 @@ See [`screenshots/README.md`](screenshots/README.md) for suggested screenshots f
 
 ## Submission files
 
-- Updated procedure report: `docs/procedure_report_ollama.pdf` (two A4 pages; the previous PDF is locked by another process)
+- Procedure report: `docs/Report.pdf` (two A4 pages, with a clickable repository link)
 - Clean archive: `Code.zip`
-- GitHub URL placeholder: `github_link.txt`
+- Repository URL: `github_link.txt`
 
 ## Prompt used
 
@@ -125,3 +124,4 @@ The exact system prompt is defined in [`prompts.py`](prompts.py) and included in
 ## GitHub repository
 
 Published repository: [https://github.com/Om-Upadhyay/llm-ps26-ADT23SOCB0662](https://github.com/Om-Upadhyay/llm-ps26-ADT23SOCB0662)
+

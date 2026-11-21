@@ -125,4 +125,3 @@ The exact system prompt is defined in [`prompts.py`](prompts.py) and included in
 ## GitHub repository
 
 Published repository: [https://github.com/Om-Upadhyay/llm-ps26-ADT23SOCB0662](https://github.com/Om-Upadhyay/llm-ps26-ADT23SOCB0662)
-
